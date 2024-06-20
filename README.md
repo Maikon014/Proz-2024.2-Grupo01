@@ -1,5 +1,5 @@
-# Proz-2024.2-Grupo01
-## Projeto - Sabor Solidário
+# PROZ PROJETO INTEGRADOR 2024.2 (GRUPO 01).
+## Projeto - Sabor Solidário.
 
 
 ## 1. O que é o projeto?

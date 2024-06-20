@@ -1,4 +1,4 @@
-# PROZ PROJETO INTEGRADOR 2024.2 (GRUPO 01).
+# PROZ - PROJETO INTEGRADOR 2024.2 (GRUPO 01).
 ## Projeto - Sabor Solidário.
 
 

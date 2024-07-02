@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <input type="radio" id="img1" name="carousel" checked>
+        <label for="img1">Imagem 1</label>
+        <img src="https://via.placeholder.com/600x400?text=Imagem+1" alt="Imagem 1" style="display: block;">
+        
+        <input type="radio" id="img2" name="carousel">
+        <label for="img2">Imagem 2</label>
+        <img src="https://via.placeholder.com/600x400?text=Imagem+2" alt="Imagem 2" style="display: none;">
+        
+        <input type="radio" id="img3" name="carousel">
+        <label for="img3">Imagem 3</label>
+        <img src="https://via.placeholder.com/600x400?text=Imagem+3" alt="Imagem 3" style="display: none;">
+        
+        <input type="radio" id="img4" name="carousel">
+        <label for="img4">Imagem 4</label>
+        <img src="https://via.placeholder.com/600x400?text=Imagem+4" alt="Imagem 4" style="display: none;">
+    </div>
+
+    <script>
+        document.querySelectorAll('input[name="carousel"]').forEach(input => {
+            input.addEventListener('change', function() {
+                document.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none';
+                });
+                document.querySelector('label[for="' + this.id + '"]').nextElementSibling.style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>

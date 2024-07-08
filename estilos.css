@@ -1,0 +1,52 @@
+nav{
+    background-color: #05283c;
+    display: block;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;  
+    text-align: right;
+    margin: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.img {
+    display: block;
+    margin-right: auto ;
+    border-radius: 10px;  
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+}
+.logo img{
+   
+    background-position: right;
+
+   
+ 
+}
+body{
+    background-color: rgb(32, 143, 176);
+    font-family: sans-serif;
+    padding: 16px;
+    margin: 8px;
+    text-align: justify;
+    background-image: url("Imagens/fundo.jpg");
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, fixed;
+    background-position: center, center;
+    background-size: contain;
+    
+    
+    
+
+}
+
+h1{
+    text-align: left;
+    color: blue;
+}
+
+
+

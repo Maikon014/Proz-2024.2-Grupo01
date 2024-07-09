@@ -57,6 +57,12 @@ ul.nav a:hover{
         border-color:#000 #fafafa #fafafa #000;
 }        
 
+ul.redes img {
+    width: 50px;
+    height: 50px;
+
+
+}
 .logo img{  
     display: block; 
     border-radius: 50px; 
@@ -111,6 +117,22 @@ article {
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.botao{
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    box-shadow: #05023d;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: rgb(19, 112, 188);
+    color: white;
+    transform: scale(1.2)
+}
 
 

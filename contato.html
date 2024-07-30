@@ -5,89 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
-  <link rel="stylesheet" href="estilos.css">
-
+  <link rel="stylesheet" href="css/styles.contato.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
-  <header>
-               
-    <nav>
-        <div class = "logo"> 
-            <img src="Imagens/logo.jpg" alt="imagem1">
-        </div>
-        <ul class="nav">
-        <li>
-            <a href="home.html">Home</a>
-        </li>
-        <li>
-            <a href="sobre.html">Sobre</a>
-        </li>
-        <li>
-            <a href="dicas.html">Dicas</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-        </ul>
-        </div>  
-    </nav>
-</header>
-<main>
-  <section>
-    <div>
+  <nav class="main-nav">
+    <img src="Imagens/logo.jpg" alt="Logo" width="70" height="70">
+    <a href="home.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="dicas.html">Dicas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <section class="contact-form">
       <h1>Entre em contato</h1>
       <h2>Envie sua mensagem preenchendo o formulário abaixo.</h2>
       <form action="">
-        <label for="nome">Nome</label> 
-        <input type="text" id="nome" name="nome">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
         <br><br>
-        <label for="telefone">Telefone</label> 
-          <input type="tel" id="telefone" name="telefone">
-          <br><br>
-          <label for="E-mail">E-mail</label> 
-          <input type="email" id="email" name="email">
-          <br><br>
-          <label for="voluntário">Selecione uma opção:</label><br>
-          <select name="option">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+        <br><br>
+        <label for="option">Selecione uma opção:</label><br>
+        <select name="option" id="option">
           <option value="empresa">Empresa</option>
-          <option value="voluntario">Voluntario</option>
-          <option value="doações">Doações</option>
-          </select>
-          <br><br>
-          <label for="comentario">Sua Mensagem</label><br>
-          <textarea>Sua mensagem</textarea>
-          <br><br>
-          <input type="submit" value="Cadastrar">
+          <option value="voluntario">Voluntário</option>
+          <option value="doacoes">Doações</option>
+        </select>
+        <br><br>
+        <label for="comentario">Sua Mensagem</label><br>
+        <textarea id="comentario" name="comentario" placeholder="Digite sua mensagem"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  <section class="relationship-channel">
+    <h2>Canal de Relacionamento</h2>
+    <h3> 0800-570-0001</h3>
+    
   </section>
-</main>
-
+  <footer>
+    <nav class="footer-nav">
+      <a href="https://www.facebook.com/">Facebook
+      <a href="https://www.linkedin.com/">Linkedin</a>
+      <a href="https://www.youtube.com/">Youtube</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </nav>
+      <p>© 2024 Sabor Solidário - Todos os direitos reservados.</p>
+  </footer>
 </body>
-
-<footer>
-  <nav >
-      <ul>
-      <p>Home</p>
-      <a href="home.html">
-      <img src="Imagens/house_3637890.png" alt="Facebook" width="70" height="70"></a>
-      </ul>
-      <ul class="redes">
-      <p>Nossas Redes:</p>
-      <a href= "https://www.facebook.com/">
-          <img src="Imagens/social_13051757.png" alt="Facebook"></a> 
-      <a href= "https://www.instagram.com/">
-          <img src="Imagens/instagram_4494489.png" alt="Instagram"></a> 
-      <a href= "https://wa.me/5544332156489">
-          <img src="Imagens/whatsapp_2504845.png" alt="Whatsapp"></a> 
-      <a href= "https://www.youtube.com/">    
-          <img src="Imagens/youtube_4494485.png" alt="Youtube"></a>   
-  
-  </nav>
-  
-<ul class="Copyright" >
-<p>Copyright © 2010-2024 Ong. Sabor Solidário. Todos os direitos reservados.</p>
-</ul>
-
-</footer>
 
 </html>

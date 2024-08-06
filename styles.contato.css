@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+>>>>>>> 3fae30e16425799e0ed12b6a03bf068fdb71b88d
 #map {
     width: 35%;
     height: 300px;
@@ -5,9 +15,45 @@
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #ddd;
+<<<<<<< HEAD
     align-items: center;
   }
 
+=======
+  }
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navegação principal */
+.main-nav {
+  display: flex;
+  align-items: center;
+  background-color: #032638;
+  padding: 10px;
+  color: blue;
+}
+
+.main-nav img {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  color: #e00c4e;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+>>>>>>> 3fae30e16425799e0ed12b6a03bf068fdb71b88d
 /* Formulário de contato */
 .contact-form {
   max-width: 575px;
@@ -15,7 +61,10 @@
   background: #e9e9e9;
   padding: 10px;
   border-radius: 8px;
+<<<<<<< HEAD
   text-align: justify;
+=======
+>>>>>>> 3fae30e16425799e0ed12b6a03bf068fdb71b88d
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -65,6 +114,47 @@
 /* Canal de Relacionamento */
 .relationship-channel {
   text-align: center;
+<<<<<<< HEAD
   margin: 15px 0;
 }
 
+=======
+  margin: 20px 0;
+}
+
+.relationship-channel h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.relationship-channel h3 {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Navegação do rodapé */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #032638;
+  padding: 10px;
+  color: #fff;
+}
+
+.footer-nav a {
+  color: #e00c4e;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+footer p{
+    background-color: #032638; 
+    color: #fff; 
+    text-align: center; 
+    position: relative; 
+}
+>>>>>>> 3fae30e16425799e0ed12b6a03bf068fdb71b88d

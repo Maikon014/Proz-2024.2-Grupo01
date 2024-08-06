@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; 
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #032638;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #e00c4e;
+}
+
+/* Main Content */
+.hero {
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.carousel-control-prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.volunteer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #032638;
+    background-color: #e00c4e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.volunteer-button:hover {
+    background-color: #c00a43;
+}
+
+/* Footer */
+footer {
+    background-color: #032638;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h5 {
+    margin-bottom: 10px;
+}
+
+.footer-section img {
+    width: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+

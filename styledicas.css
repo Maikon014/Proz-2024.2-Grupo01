@@ -1,0 +1,248 @@
+/* Cabeçalho */
+body, h1, h3, p, ul, li, a, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4799eb;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+}
+
+.header-options img {
+    margin-right: 20px;
+}
+
+.header-options a {
+    text-decoration: none; 
+    color: #ffffff; 
+    margin-left: 15px; 
+    font-family: Arial, sans-serif; 
+}
+
+.header-options a:hover {
+    color: #000000; 
+}
+
+.main-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+}
+
+.main-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+}
+
+.main-content ul {
+    margin-bottom: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+.main-content img {
+    display: block;
+    margin: 10px 0;
+}
+
+
+/* Main */
+.content-container {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px;
+    max-width: 1000px; 
+    margin-bottom: 50px;
+}
+
+.text-box1 {
+    flex: 1; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px; 
+    background-color:#aae5e8;
+    box-sizing: border-box; 
+    max-width: 2000px; 
+    height: 390px; 
+
+}
+
+.text-box2 {
+    flex: 1; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px; 
+    background-color:#d48c81;
+    box-sizing: border-box; 
+    max-width: 2000px; 
+    height: 390px; 
+
+}
+
+.text-box3 {
+    flex: 1; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px; 
+    background-color:#f7e7b2;
+    box-sizing: border-box; 
+    max-width: 2000px; 
+    height: 390px; 
+
+}
+
+.image-box {
+    flex: 1; 
+    max-width: 2000px; 
+    height: 380px;  
+    border-radius: 8px; 
+}
+
+.image-box img {
+    width: 95%; 
+    height: 95%; 
+    
+}
+
+
+.chips-container {
+    background-color:#aae5e8; 
+    border-radius: 1%;
+}
+
+.arroz-container {
+    background-color: #d48c81; 
+    border-radius: 1%;
+}
+
+.pizza-container {
+    background-color: #f7e7b2; 
+    border-radius: 1%;
+}
+
+
+/* Formulário*/
+.form-container {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.form-container input,
+.form-container button {
+    display: block; 
+    width: 97%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+
+.form-container button {
+    background-color:#4799eb; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.form-container button:hover {
+    background-color: #0056b3; 
+}
+
+/* Footer */
+
+.footer-logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
+.footer-logo:hover {
+    color: #000000; 
+}
+
+
+footer {
+    background-color:#4799eb;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-link {
+    margin-bottom: 10px; 
+}
+
+footer .social-links {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 10px; 
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+footer .social-links a:hover {
+    color: #000000; 
+}
+
+footer p {
+    font-size: 0.9em;
+    color:#ffffff;
+    margin-top: 0; 
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #ad2626; 
+    color: rgb(255, 255, 255); 
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+}
+
+.back-to-top:hover {
+    background-color:#e72e2e;
+}

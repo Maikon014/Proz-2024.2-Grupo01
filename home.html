@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sabor Solidário</title>
+    <style>
+        .gallery {
+            width: 640px;
+            height: 360px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+        .gallery .photos {
+            display: flex;
+            width: calc(640px * 5); /* 5 é o número de imagens */
+            animation: slide 20s infinite;
+        }
+        .gallery .photos img {
+            width: 640px;
+            height: 360px;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+        @keyframes slide {
+
+            0% { margin-left: 0; }
+            20% { margin-left: 0; }
+            25% { margin-left: -100%; }
+            45% { margin-left: -100%; }
+            50% { margin-left: -200%; }
+            70% { margin-left: -200%; }
+            75% { margin-left: -300%; }
+            95% { margin-left: -300%; }
+            100% { margin-left: -400%; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -12,10 +45,10 @@
         <nav class="navbar">
             <img src="logo.png" alt="Logo" class="logo">
             <ul class="navbar-nav">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Sobre</a></li>
-                <li><a href="#" class="nav-link">Dicas</a></li>
-                <li><a href="#" class="nav-link">Contato</a></li>
+                <li><a rel="self" href="#" class="nav-link">Home</a></li>
+                <li><a rel="next" href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a rel="next" href="dicas.html" class="nav-link">Dicas</a></li>
+                <li><a rel="next" href="contato.html" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -24,29 +57,34 @@
     <main>
         <section class="hero">
             <h1>Sabor Solidário</h1>
-            <p>A ONG Sabor Solidário é uma iniciativa que visa combater o desperdício de alimentos e ajudar comunidades em situação de vulnerabilidade.</p>
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://img.freepik.com/fotos-gratis/delicioso-goulash-pronto-para-o-jantar_23-2149370830.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=sph" alt="Primeira imagem de comida">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://img.freepik.com/fotos-gratis/macarrao-penne-em-molho-de-tomate-com-frango-e-tomate-em-uma-mesa-de-madeira_2829-19739.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=sph" alt="Segunda imagem de comida">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://img.freepik.com/fotos-gratis/pao-doce-caseiro-delicioso-close-up_23-2148461026.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=ais_user" alt="Terceira imagem de comida">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
-                <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <button class="volunteer-button">Seja um voluntário!</button>
+            <p style="text-align: justify;">
+                A ONG Sabor Solidário é uma iniciativa dedicada a combater o desperdício de alimentos e a apoiar comunidades em situação de vulnerabilidade. Com um foco central na sustentabilidade e na solidariedade, trabalhamos incansavelmente para resgatar alimentos que, de outra forma, seriam descartados, e redirecioná-los para aqueles que mais necessitam.
+
+                Nosso objetivo é criar um impacto positivo na sociedade, promovendo a conscientização sobre o desperdício de alimentos e oferecendo suporte vital para comunidades carentes. Através de parcerias com mercados, restaurantes e outros estabelecimentos, coletamos alimentos excedentes e os distribuímos de maneira eficiente e responsável.
+
+                Na Sabor Solidário, acreditamos que juntos podemos fazer a diferença. Cada alimento recuperado representa uma refeição a mais na mesa de uma família em necessidade. Junte-se a nós nessa missão de combater o desperdício e transformar vidas.
+            </p>
         </section>
     </main>
 
+    <section class="gallery">
+        <div class="photos">
+          <img src="https://img.freepik.com/fotos-gratis/delicioso-goulash-pronto-para-o-jantar_23-2149370830.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=sph" alt="Primeira imagem de comida">
+          <img src="https://img.freepik.com/fotos-gratis/macarrao-penne-em-molho-de-tomate-com-frango-e-tomate-em-uma-mesa-de-madeira_2829-19739.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=sph" alt="Segunda imagem de comida">
+
+          <img src="https://img.freepik.com/fotos-gratis/pao-doce-caseiro-delicioso-close-up_23-2148461026.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=ais_user" alt="Terceira imagem de comida">
+          <img src="https://img.freepik.com/fotos-gratis/delicioso-goulash-pronto-para-o-jantar_23-2149370830.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=sph" alt="penultima imagem de comida">
+          <img src="https://img.freepik.com/fotos-gratis/macarrao-penne-em-molho-de-tomate-com-frango-e-tomate-em-uma-mesa-de-madeira_2829-19739.jpg?uid=R105083485&ga=GA1.1.973913.1692369510&semt=sph" alt="ultima imagem de comida">
+            
+        </div>
+    </section>
+
     <!-- Footer -->
+    <button class="volunteer-button" style="margin: 100px;">Seja um voluntário!</button>
+    <br>
     <footer>
-        <div class="footer-content">
+      
+        <div class="footer-content" style="height: 10px; padding: 20px; box-sizing: border-box; height: 10px;" >
             <div class="footer-section social-media">
                 <h5>Nossas Redes:</h5>
                 <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4494/4494475.png"></a>
@@ -59,7 +97,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="script1.js"></script>
 </body>
 </html>
